@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Somesh M | Data Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            padding: 80px 50px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: black;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 60px 50px;
+        }
+
+        .section h2 {
+            color: #38bdf8;
+            margin-bottom: 30px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #1e293b;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 6px;
+        }
+
+        .project {
+            background: #1e293b;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            nav {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Somesh M</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Data Analyst | ML Enthusiast</h2>
+    <p>Statistics & Data Science Student passionate about building data-driven solutions.</p>
+    <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I am a Statistics and Data Science student with strong interest in 
+        Machine Learning, Data Analysis, and Business Insights. 
+        I enjoy building end-to-end ML projects and deploying them using Streamlit.
+    </p>
+</section>
+
+<section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>Pandas</span>
+        <span>NumPy</span>
+        <span>Scikit-learn</span>
+        <span>SQL</span>
+        <span>Streamlit</span>
+        <span>Power BI</span>
+        <span>Git & GitHub</span>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>🏏 IPL Auction Price Predictor</h3>
+        <p>Machine learning model to predict IPL player auction prices using Random Forest and feature engineering.</p>
+        <a href="https://github.com/yourusername/ipl-project" target="_blank">View Project</a>
+    </div>
+
+    <div class="project">
+        <h3>📊 Business Sales Analysis</h3>
+        <p>Performed regression analysis and business KPI evaluation to identify profit-driving factors.</p>
+        <a href="https://github.com/yourusername/sales-analysis" target="_blank">View Project</a>
+    </div>
+
+    <div class="project">
+        <h3>📈 Customer Churn Prediction</h3>
+        <p>Built classification model to predict customer churn with evaluation metrics and deployment.</p>
+        <a href="https://github.com/yourusername/churn-model" target="_blank">View Project</a>
+    </div>
+
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: yourmail@example.com</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    <p>GitHub: github.com/yourusername</p>
+</section>
+
+<footer>
+    <p>© 2026 Somesh M | Data Portfolio</p>
+</footer>
+
+</body>
+</html>

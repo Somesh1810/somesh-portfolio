@@ -8,19 +8,13 @@
 <style>
 
 /* ===== GLOBAL ===== */
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background: #0f172a;
     color: #f1f5f9;
-}
-
-h1, h2, h3 {
-    margin: 0;
 }
 
 .section {
@@ -39,9 +33,7 @@ header {
     flex-wrap: wrap;
 }
 
-header h1 {
-    color: #38bdf8;
-}
+header h1 { color: #38bdf8; }
 
 nav a {
     color: white;
@@ -50,9 +42,7 @@ nav a {
     font-weight: 500;
 }
 
-nav a:hover {
-    color: #38bdf8;
-}
+nav a:hover { color: #38bdf8; }
 
 /* ===== HERO ===== */
 .hero {
@@ -61,14 +51,11 @@ nav a:hover {
     animation: fadeIn 1.5s ease-in-out;
 }
 
-.hero h2 {
-    font-size: 38px;
-    margin-bottom: 15px;
-}
+.hero h2 { font-size: 38px; }
 
 .hero p {
     max-width: 700px;
-    margin: auto;
+    margin: 15px auto;
     color: #cbd5e1;
 }
 
@@ -84,9 +71,7 @@ nav a:hover {
     transition: 0.3s;
 }
 
-.btn:hover {
-    background: white;
-}
+.btn:hover { background: white; }
 
 /* ===== SKILLS ===== */
 .skills span {
@@ -105,7 +90,6 @@ nav a:hover {
     margin-bottom: 25px;
     border-radius: 12px;
     transition: 0.3s;
-    box-shadow: 0 0 0 transparent;
 }
 
 .project-card:hover {
@@ -122,7 +106,7 @@ nav a:hover {
     font-weight: bold;
 }
 
-/* ===== CONTACT ===== */
+/* ===== FOOTER ===== */
 footer {
     text-align: center;
     padding: 20px;
@@ -137,25 +121,10 @@ footer {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav {
-        margin-top: 10px;
-    }
-
-    nav a {
-        display: inline-block;
-        margin: 10px;
-    }
-
-    .hero h2 {
-        font-size: 26px;
-    }
-
+    header { flex-direction: column; text-align: center; }
+    nav { margin-top: 10px; }
+    nav a { display: inline-block; margin: 10px; }
+    .hero h2 { font-size: 26px; }
 }
 
 </style>
@@ -177,7 +146,7 @@ footer {
     <h2>Data Analyst | Machine Learning Engineer</h2>
     <p>
         MSc Data Analytics student passionate about Machine Learning, NLP, 
-        and transforming data into actionable insights.
+        and transforming raw data into actionable insights.
     </p>
     <a href="#projects" class="btn">View Projects</a>
     <a href="resume.pdf" class="btn" download>Download Resume</a>
@@ -186,9 +155,8 @@ footer {
 <section id="about" class="section">
     <h2 style="color:#38bdf8;">About Me</h2>
     <p>
-        I specialize in Exploratory Data Analysis, Predictive Modeling, and 
-        deploying ML applications using Streamlit. I enjoy solving real-world 
-        problems using data-driven approaches.
+        Experienced in EDA, predictive modeling, and deploying ML applications 
+        using Streamlit. Strong foundation in statistics and data-driven decision making.
     </p>
 </section>
 
@@ -212,34 +180,50 @@ footer {
 <section id="projects" class="section">
     <h2 style="color:#38bdf8;">Featured Projects</h2>
 
+    <!-- IPL -->
     <div class="project-card">
         <h3>🏏 IPL Score Prediction</h3>
         <p>
-            Built an end-to-end regression model to predict final IPL innings score 
-            using historical match data. Applied feature engineering and deployed 
-            via Streamlit for real-time predictions.
+            End-to-end regression model predicting final IPL innings score 
+            using historical data. Feature engineering, model evaluation (MAE/RMSE) 
+            and Streamlit deployment.
         </p>
         <div class="project-links">
             <a href="https://github.com/Somesh1810/IPL-score-prediction" target="_blank">GitHub</a>
         </div>
     </div>
 
+    <!-- Social Media -->
+    <div class="project-card">
+        <h3>📊 Social Media Engagement Analysis</h3>
+        <p>
+            Performed exploratory data analysis on 500+ engagement records 
+            using Pandas & NumPy. Built visualizations to uncover category-wise 
+            trends and actionable business insights.
+        </p>
+        <div class="project-links">
+            <a href="https://github.com/Somesh1810/Social-Media-Engagement-Analysis" target="_blank">GitHub</a>
+        </div>
+    </div>
+
+    <!-- Grammar -->
     <div class="project-card">
         <h3>🔤 Grammar & Spelling Correction</h3>
         <p>
-            NLP-based text correction system using edit distance, POS tagging 
-            and contextual transformer refinement.
+            NLP-based correction system using edit distance, POS tagging 
+            and contextual transformer refinement deployed via Streamlit.
         </p>
         <div class="project-links">
             <a href="https://github.com/Somesh1810/Grammarandspellingdetection" target="_blank">GitHub</a>
         </div>
     </div>
 
+    <!-- Emotion -->
     <div class="project-card">
         <h3>😊 Emotion Detection (CNN)</h3>
         <p>
-            Deep learning model using TensorFlow/Keras to classify 7 facial emotions. 
-            Deployed using Streamlit with live predictions.
+            CNN-based deep learning model classifying 7 facial emotions 
+            using TensorFlow/Keras with real-time Streamlit deployment.
         </p>
         <div class="project-links">
             <a href="https://github.com/Somesh1810/emotion-detection" target="_blank">GitHub</a>

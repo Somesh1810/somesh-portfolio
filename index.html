@@ -1,119 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Someshwar M | Data Analyst Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Someshwar M | Data Analyst Portfolio</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: #0f172a;
-            color: #f1f5f9;
-        }
+<style>
 
-        header {
-            background: #1e293b;
-            padding: 20px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+/* ===== GLOBAL ===== */
+html {
+    scroll-behavior: smooth;
+}
 
-        header h1 {
-            margin: 0;
-            color: #38bdf8;
-        }
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #f1f5f9;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-        }
+h1, h2, h3 {
+    margin: 0;
+}
 
-        nav a:hover {
-            color: #38bdf8;
-        }
+.section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
 
-        .hero {
-            text-align: center;
-            padding: 80px 20px;
-        }
+/* ===== HEADER ===== */
+header {
+    background: #1e293b;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-        .hero h2 {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
+header h1 {
+    color: #38bdf8;
+}
 
-        .hero p {
-            max-width: 700px;
-            margin: auto;
-            color: #cbd5e1;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
 
-        .btn {
-            display: inline-block;
-            margin: 15px 10px 0 10px;
-            padding: 12px 25px;
-            background: #38bdf8;
-            color: black;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
+nav a:hover {
+    color: #38bdf8;
+}
 
-        .section {
-            padding: 60px 50px;
-            max-width: 1100px;
-            margin: auto;
-        }
+/* ===== HERO ===== */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
 
-        .section h2 {
-            color: #38bdf8;
-            margin-bottom: 30px;
-        }
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
 
-        .skills span {
-            display: inline-block;
-            background: #1e293b;
-            padding: 10px 15px;
-            margin: 5px;
-            border-radius: 6px;
-            font-size: 14px;
-        }
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    color: #cbd5e1;
+}
 
-        .project-card {
-            background: #1e293b;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
+.btn {
+    display: inline-block;
+    margin: 20px 10px 0 10px;
+    padding: 12px 25px;
+    background: #38bdf8;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
+.btn:hover {
+    background: white;
+}
 
-        .project-card h3 {
-            margin-top: 0;
-        }
+/* ===== SKILLS ===== */
+.skills span {
+    display: inline-block;
+    background: #1e293b;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 6px;
+    font-size: 14px;
+}
 
-        .project-links a {
-            display: inline-block;
-            margin-right: 15px;
-            margin-top: 10px;
-            color: #38bdf8;
-            text-decoration: none;
-            font-weight: bold;
-        }
+/* ===== PROJECTS ===== */
+.project-card {
+    background: #1e293b;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 0 0 transparent;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1e293b;
-        }
-    </style>
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+.project-links a {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 15px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===== CONTACT ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+}
+
+</style>
 </head>
 
 <body>
@@ -129,32 +174,31 @@
 </header>
 
 <section class="hero">
-    <h2>Data Analyst | Machine Learning | Python • SQL • Power BI</h2>
+    <h2>Data Analyst | Machine Learning Engineer</h2>
     <p>
-        MSc Data Analytics student at Christ University with hands-on experience 
-        in Exploratory Data Analysis, Machine Learning, NLP, and Dashboard Development.
+        MSc Data Analytics student passionate about Machine Learning, NLP, 
+        and transforming data into actionable insights.
     </p>
     <a href="#projects" class="btn">View Projects</a>
+    <a href="resume.pdf" class="btn" download>Download Resume</a>
 </section>
 
 <section id="about" class="section">
-    <h2>About Me</h2>
+    <h2 style="color:#38bdf8;">About Me</h2>
     <p>
-        I am passionate about transforming raw data into meaningful insights. 
-        Experienced in data cleaning, statistical analysis, visualization, and deploying 
-        machine learning applications using Streamlit.
+        I specialize in Exploratory Data Analysis, Predictive Modeling, and 
+        deploying ML applications using Streamlit. I enjoy solving real-world 
+        problems using data-driven approaches.
     </p>
 </section>
 
 <section id="skills" class="section">
-    <h2>Technical Skills</h2>
+    <h2 style="color:#38bdf8;">Technical Skills</h2>
     <div class="skills">
         <span>Python</span>
         <span>Pandas</span>
         <span>NumPy</span>
-        <span>Matplotlib</span>
         <span>SQL</span>
-        <span>Excel</span>
         <span>Power BI</span>
         <span>Machine Learning</span>
         <span>Scikit-learn</span>
@@ -166,59 +210,38 @@
 </section>
 
 <section id="projects" class="section">
-    <h2>Featured Projects</h2>
+    <h2 style="color:#38bdf8;">Featured Projects</h2>
 
-    <!-- IPL Score Prediction -->
     <div class="project-card">
-        <h3>🏏 IPL Score Prediction (Machine Learning)</h3>
+        <h3>🏏 IPL Score Prediction</h3>
         <p>
-            Developed an end-to-end IPL score prediction system using historical match data. 
-            Applied feature engineering and trained regression models to estimate final innings score. 
-            Evaluated performance using MAE & RMSE and deployed an interactive Streamlit web application 
-            for real-time predictions.
+            Built an end-to-end regression model to predict final IPL innings score 
+            using historical match data. Applied feature engineering and deployed 
+            via Streamlit for real-time predictions.
         </p>
         <div class="project-links">
             <a href="https://github.com/Somesh1810/IPL-score-prediction" target="_blank">GitHub</a>
         </div>
     </div>
 
-    <!-- Grammar Project -->
     <div class="project-card">
-        <h3>🔤 Grammar & Spelling Correction System</h3>
+        <h3>🔤 Grammar & Spelling Correction</h3>
         <p>
-            NLP-based text correction system using edit-distance algorithms, 
-            POS tagging, and transformer-based contextual refinement. 
-            Deployed as a real-time Streamlit application.
+            NLP-based text correction system using edit distance, POS tagging 
+            and contextual transformer refinement.
         </p>
         <div class="project-links">
-            <a href="https://grammarandspellingdetection1-4y36nhdvmkugejns2s2zk9.streamlit.app/" target="_blank">Live App</a>
             <a href="https://github.com/Somesh1810/Grammarandspellingdetection" target="_blank">GitHub</a>
         </div>
     </div>
 
-    <!-- Social Media Analysis -->
     <div class="project-card">
-        <h3>📊 Social Media Engagement Analysis</h3>
+        <h3>😊 Emotion Detection (CNN)</h3>
         <p>
-            Conducted EDA on 500+ engagement records using Pandas and NumPy. 
-            Built visualizations and statistical summaries to uncover category-wise 
-            engagement trends for business insights.
+            Deep learning model using TensorFlow/Keras to classify 7 facial emotions. 
+            Deployed using Streamlit with live predictions.
         </p>
         <div class="project-links">
-            <a href="https://github.com/Somesh1810/Social-Media-Engagement-Analysis" target="_blank">GitHub</a>
-        </div>
-    </div>
-
-    <!-- Emotion Detection -->
-    <div class="project-card">
-        <h3>😊 Emotion Detection App (CNN)</h3>
-        <p>
-            Built a CNN-based facial emotion recognition model using TensorFlow/Keras. 
-            Classified 7 emotions from 48x48 grayscale images and deployed via Streamlit 
-            with real-time prediction and confidence scores.
-        </p>
-        <div class="project-links">
-            <a href="https://3dkmzihev7n3y6t272fhrc.streamlit.app/" target="_blank">Live App</a>
             <a href="https://github.com/Somesh1810/emotion-detection" target="_blank">GitHub</a>
         </div>
     </div>
@@ -226,21 +249,10 @@
 </section>
 
 <section id="contact" class="section">
-    <h2>Contact</h2>
+    <h2 style="color:#38bdf8;">Contact</h2>
     <p>Email: msomeshn@gmail.com</p>
-    <p>University Email: someshwar.m@christuniversity.in</p>
-    <p>
-        LinkedIn: 
-        <a href="https://www.linkedin.com/in/someshwar-m" target="_blank">
-            linkedin.com/in/someshwar-m
-        </a>
-    </p>
-    <p>
-        GitHub: 
-        <a href="https://github.com/Somesh1810" target="_blank">
-            github.com/Somesh1810
-        </a>
-    </p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/someshwar-m" target="_blank" style="color:#38bdf8;">linkedin.com/in/someshwar-m</a></p>
+    <p>GitHub: <a href="https://github.com/Somesh1810" target="_blank" style="color:#38bdf8;">github.com/Somesh1810</a></p>
     <p>Location: Bangalore, India</p>
 </section>
 

@@ -6,255 +6,125 @@
 <title>Someshwar M | Data Analyst Portfolio</title>
 
 <style>
-
-/* ===== GLOBAL ===== */
 html { scroll-behavior: smooth; }
-
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0f172a;
-    color: #f1f5f9;
-}
-
-.section {
-    padding: 60px 20px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-/* ===== HEADER ===== */
-header {
-    background: #1e293b;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
+body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #0f172a; color: #f1f5f9; }
+.section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+header { background: #1e293b; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
 header h1 { color: #38bdf8; }
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: 500;
-}
-
+nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 500; }
 nav a:hover { color: #38bdf8; }
-
-/* ===== HERO ===== */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
+.hero { text-align: center; padding: 100px 20px; animation: fadeIn 1.5s ease-in-out; }
 .hero h2 { font-size: 38px; }
-
-.hero p {
-    max-width: 700px;
-    margin: 15px auto;
-    color: #cbd5e1;
-}
-
-.btn {
-    display: inline-block;
-    margin: 20px 10px 0 10px;
-    padding: 12px 25px;
-    background: #38bdf8;
-    color: black;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
+.hero p { max-width: 700px; margin: 15px auto; color: #cbd5e1; }
+.btn { display: inline-block; margin: 20px 10px 0 10px; padding: 12px 25px; background: #38bdf8; color: black; text-decoration: none; border-radius: 6px; font-weight: bold; transition: 0.3s; }
 .btn:hover { background: white; }
-
-/* ===== SKILLS ===== */
-.skills span {
-    display: inline-block;
-    background: #1e293b;
-    padding: 10px 15px;
-    margin: 5px;
-    border-radius: 6px;
-    font-size: 14px;
-}
-
-/* ===== PROJECTS ===== */
-.project-card {
-    background: #1e293b;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 20px #38bdf8;
-}
-
-.project-links a {
-    display: inline-block;
-    margin-right: 15px;
-    margin-top: 15px;
-    color: #38bdf8;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* ===== FOOTER ===== */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #1e293b;
-}
-
-/* ===== ANIMATION ===== */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* ===== RESPONSIVE ===== */
+.skills span { display: inline-block; background: #1e293b; padding: 10px 15px; margin: 5px; border-radius: 6px; font-size: 14px; }
+.project-card { background: #1e293b; padding: 25px; margin-bottom: 25px; border-radius: 12px; transition: 0.3s; }
+.project-card:hover { transform: translateY(-8px); box-shadow: 0 0 20px #38bdf8; }
+.project-links a { display: inline-block; margin-right: 15px; margin-top: 15px; color: #38bdf8; text-decoration: none; font-weight: bold; }
+footer { text-align: center; padding: 20px; background: #1e293b; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
 @media (max-width: 768px) {
-    header { flex-direction: column; text-align: center; }
-    nav { margin-top: 10px; }
-    nav a { display: inline-block; margin: 10px; }
-    .hero h2 { font-size: 26px; }
+header { flex-direction: column; text-align: center; }
+nav { margin-top: 10px; }
+nav a { display: inline-block; margin: 10px; }
+.hero h2 { font-size: 26px; }
 }
-
 </style>
 </head>
 
 <body>
-
 <header>
-    <h1>Someshwar M</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<h1>Someshwar M</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
 <section class="hero">
-    <h2>Data Analyst | Machine Learning Engineer</h2>
-    <p>
-        MSc Data Analytics student passionate about Machine Learning, NLP, 
-        and transforming raw data into actionable insights.
-    </p>
-    <a href="#projects" class="btn">View Projects</a>
-    <a href="resume.pdf" class="btn" download>Download Resume</a>
-</section>
-
-<section id="about" class="section">
-    <h2 style="color:#38bdf8;">About Me</h2>
-    <p>
-        Experienced in EDA, predictive modeling, and deploying ML applications 
-        using Streamlit. Strong foundation in statistics and data-driven decision making.
-    </p>
-</section>
-
-<section id="skills" class="section">
-    <h2 style="color:#38bdf8;">Technical Skills</h2>
-    <div class="skills">
-        <span>Python</span>
-        <span>Pandas</span>
-        <span>NumPy</span>
-        <span>SQL</span>
-        <span>Power BI</span>
-        <span>Machine Learning</span>
-        <span>Scikit-learn</span>
-        <span>TensorFlow</span>
-        <span>NLP</span>
-        <span>Streamlit</span>
-        <span>EDA</span>
-    </div>
+<h2>Data Analyst | Machine Learning Engineer</h2>
+<p>MSc Data Analytics student passionate about Machine Learning, NLP, and transforming raw data into actionable insights.</p>
+<a href="#projects" class="btn">View Projects</a>
+<a href="resume.pdf" class="btn" download>Download Resume</a>
 </section>
 
 <section id="projects" class="section">
-    <h2 style="color:#38bdf8;">Featured Projects</h2>
+<h2 style="color:#38bdf8;">Featured Projects</h2>
 
-    <!-- IPL -->
-    <div class="project-card">
-        <h3>Rock–Paper–Scissors–Plus AI Referee Bot</h3>
-        <p>
-            This project implements a minimal AI Game Referee for a Rock–Paper–Scissors–Plus game.
-            The bot runs a short, best-of-3 conversational game between a user and the system, enforcing rules,
-            tracking state, and responding intelligently to user input.
-        </p>
-        <div class="project-links">
-            <a href="https://github.com/Somesh1810/Rock_Paper_Scissor" target="_blank">GitHub</a>
-        </div>
-    </div>
+<!-- FundSage AI (Added at Top) -->
+<div class="project-card">
+<h3>💰 FundSage AI – Mutual Fund Recommendation System</h3>
+<p>
+AI-powered mutual fund recommendation system using Random Forest, SHAP (Explainable AI), and Agentic AI (LLaMA3) to deliver personalized and transparent investment insights with real-time data.
+</p>
+<div class="project-links">
+<a href="https://github.com/someshwarm-cmyk/fundsage-ai" target="_blank">GitHub</a>
+<a href="https://fundsage-frontend.onrender.com/" target="_blank">Live App</a>
+</div>
+</div>
 
-    <!-- Social Media -->
-    <div class="project-card">
-        <h3>📊 Social Media Engagement Analysis</h3>
-        <p>
-            Performed exploratory data analysis on 500+ engagement records 
-            using Pandas & NumPy. Built visualizations to uncover category-wise 
-            trends and actionable business insights.
-        </p>
-        <div class="project-links">
-            <a href="https://github.com/Somesh1810/Social-Media-Engagement-Analysis" target="_blank">GitHub</a>
-        </div>
-    </div>
+<!-- Rock Paper Scissors -->
+<div class="project-card">
+<h3>Rock–Paper–Scissors–Plus AI Referee Bot</h3>
+<p>
+Minimal AI Game Referee for a conversational game, managing state, enforcing rules, and responding intelligently.
+</p>
+<div class="project-links">
+<a href="https://github.com/Somesh1810/Rock_Paper_Scissor" target="_blank">GitHub</a>
+</div>
+</div>
 
-    <!-- Grammar -->
-    <div class="project-card">
-        <h3>🔤 Grammar & Spelling Correction</h3>
-        <p>
-            NLP-based correction system using edit distance, POS tagging 
-            and contextual transformer refinement deployed via Streamlit.
-        </p>
-        <div class="project-links">
-            <a href="https://github.com/Somesh1810/Grammarandspellingdetection" target="_blank">GitHub</a>
-        </div>
-    </div>
+<!-- Social Media -->
+<div class="project-card">
+<h3>📊 Social Media Engagement Analysis</h3>
+<p>
+Performed EDA on 500+ records using Pandas & NumPy to uncover trends and generate business insights.
+</p>
+<div class="project-links">
+<a href="https://github.com/Somesh1810/Social-Media-Engagement-Analysis" target="_blank">GitHub</a>
+</div>
+</div>
 
-    <!-- Emotion -->
-    <div class="project-card">
-        <h3>😊 Emotion Detection (CNN)</h3>
-        <p>
-            CNN-based deep learning model classifying 7 facial emotions 
-            using TensorFlow/Keras with real-time Streamlit deployment.
-        </p>
-        <div class="project-links">
-            <a href="https://github.com/Somesh1810/emotion-detection" target="_blank">GitHub</a>
-        </div>
-    </div>
-    <div class="project-card">
-        <h3>IPL-Score-Prediction</h3>
-        <p>
-            A Machine Learning project that predicts the final score of an IPL innings using live match statistics 
-            such as batting team, bowling team, current score, overs, wickets, and recent performance.This project 
-            demonstrates end-to-end ML workflow including data preprocessing, feature engineering, model building, 
-            evaluation, and deployment using Streamlit.
-        </p>
-        <div class="project-links">
-            <a href="https://github.com/Somesh1810/IPL-Score-Prediction" target="_blank">GitHub</a>
-        </div>
-    </div>
+<!-- Grammar -->
+<div class="project-card">
+<h3>🔤 Grammar & Spelling Correction</h3>
+<p>
+NLP-based system using edit distance, POS tagging, and transformer-based refinement deployed via Streamlit.
+</p>
+<div class="project-links">
+<a href="https://github.com/Somesh1810/Grammarandspellingdetection" target="_blank">GitHub</a>
+</div>
+</div>
 
+<!-- Emotion -->
+<div class="project-card">
+<h3>😊 Emotion Detection (CNN)</h3>
+<p>
+CNN model using TensorFlow/Keras to classify 7 facial emotions with real-time Streamlit deployment.
+</p>
+<div class="project-links">
+<a href="https://github.com/Somesh1810/emotion-detection" target="_blank">GitHub</a>
+</div>
+</div>
 
-</section>
+<!-- IPL -->
+<div class="project-card">
+<h3>🏏 IPL Score Prediction</h3>
+<p>
+ML model predicting IPL scores using match features; includes preprocessing, feature engineering, and Streamlit deployment.
+</p>
+<div class="project-links">
+<a href="https://github.com/Somesh1810/IPL-Score-Prediction" target="_blank">GitHub</a>
+</div>
+</div>
 
-<section id="contact" class="section">
-    <h2 style="color:#38bdf8;">Contact</h2>
-    <p>Email: msomeshn@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/someshwar-m" target="_blank" style="color:#38bdf8;">linkedin.com/in/someshwar-m</a></p>
-    <p>GitHub: <a href="https://github.com/Somesh1810" target="_blank" style="color:#38bdf8;">github.com/Somesh1810</a></p>
-    <p>Location: Bangalore, India</p>
 </section>
 
 <footer>
-    <p>© 2026 Someshwar M | Data Analyst Portfolio</p>
+<p>© 2026 Someshwar M | Data Analyst Portfolio</p>
 </footer>
 
 </body>
